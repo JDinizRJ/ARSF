@@ -11,12 +11,10 @@ java {
 	sourceCompatibility = '17'
 }
 
-tasks.withType(jar) {
+tasks.withType(Jar).configureEach {
 	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 	manifest {
-		attributes(
-				'Main-Class': 'com.arsf.arsf.config.Application'
-		)
+		attributes["Main-Class"] = "com.arsf.arsf.config.Application"
 	}
 }
 
