@@ -11,7 +11,7 @@ java {
 	sourceCompatibility = '17'
 }
 
-jar {
+tasks.withType(jar) {
 	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 	manifest {
 		attributes(
