@@ -16,11 +16,11 @@ public class Application {
 
 	}
 
-	@Bean
-	public JdbcTemplate jdbcTemplate(DataSource dataSource) {
+	/*@Bean
+	--public JdbcTemplate jdbcTemplate(DataSource dataSource) {
 			return new JdbcTemplate(dataSource);
 		}
-
+*/
 
 }
 
